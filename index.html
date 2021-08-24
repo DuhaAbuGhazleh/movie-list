@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-list</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+<h1>My movie-list</h1>
+    </header>
+
+    <main>
+<!-- 
+     - Create a form in order to add the **movie name** and **movie category** and **issue year**. 
+    - The category should have a predefined list that contains the following categories: 
+        - Action
+        - Adventure
+        - Animation
+        - Comedy
+        - Detective
+        - Fantasy
+        - History
+        - Horror
+        - Musical
+        - Pirate
+        - Romantic
+        - SCI-FI
+        - War
+        - Western
+ -->
+
+<div>
+ <fieldset>
+     <legend> New Movie </legend>
+     <form action="" id="formFilm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+
+
+        <label for="categoryofimg">Image:</label>
+        <select name="categoryofimg" id="categoryofimg">
+          <option value="Action"><img src="./img/action.png" width="10" height="10">Action</option>
+          <option value="Adventure"><img src="./img/adventure.png" width="10" height="10">Adventure</option>
+          <option value="Animation"><img src="./img/animation.png" width="10" height="10">Animation</option>
+          <option value="Comedy"><img src="./img/comedy.png" width="10" height="10">Comedy</option>
+
+          <option value="Detective"><img src="./img/detective.png" width="10" height="10">Detective</option>
+          <option value="History"><img src="./img/history.png" width="10" height="10">History</option>
+          <option value="Fantasy"><img src="./img/fantasy.png" width="10" height="10">Fantasy</option>
+          <option value="Horror"><img src="./img/horror.png" width="10" height="10">Horror</option>
+
+          <option value="Musical"><img src="./img/musical.png" width="10" height="10">Musical</option>
+          <option value="Pirate"><img src="./img/pirate.png" width="10" height="10">Pirate</option>
+          <option value="Romantic"><img src="./img/romantic.png" width="10" height="10">Romantic</option>
+          <option value="SCI-FI"><img src="./img/sci-fi.png" width="10" height="10">SCI-FI</option>
+
+          <option value=" War"> <img src="./img/war.png" width="10" height="10">War</option>
+          <option value="Western"><img src="./img/western.png" width="10" height="10">Western</option>
+
+
+          <!-- img src="/images/avatar/1.png" -->
+        </select>
+        <br><br>
+
+        <label for="release">release:</label>
+        <input type="number" id="release" name="release"><br><br>
+
+        <input type="submit" value="Submit">
+     </form>
+ </fieldset>
+</div>
+
+<div>
+
+     <table id="tableFilm">
+
+     </table>
+</div>
+
+    
+ 
+    </main>
+
+    <footer>
+<h2>All right reserved</h2>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
